@@ -1,4 +1,3 @@
-using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Financas.Api.Configuration;
@@ -22,6 +21,12 @@ public static class ApiConfig
     public static IApplicationBuilder UseApiConfiguration(this IApplicationBuilder app)
     {
         app.UseSwaggerConfiguration();
+        app.UseCors(x =>
+        {
+            x.AllowAnyHeader();
+            x.AllowAnyMethod();
+            x.AllowAnyOrigin();
+        });
         app.UseHttpsRedirection();
         app.UseAuthentication();
         app.UseAuthorization();

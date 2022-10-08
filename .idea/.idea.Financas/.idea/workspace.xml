@@ -9,7 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6721706d-8cc6-4b3e-95a4-895169877bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Financas.Api/Configuration/ApiConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Financas.Api/Configuration/ApiConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Financas.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Financas.Api/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665184206673</updated>
-      <workItem from="1665184213882" duration="2703000" />
+      <workItem from="1665184213882" duration="3348000" />
     </task>
     <task id="LOCAL-00001" summary="feature: Initiating">
       <created>1665184601230</created>
