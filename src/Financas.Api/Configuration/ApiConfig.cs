@@ -1,10 +1,20 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 namespace Financas.Api.Configuration;
 
 public static class ApiConfig
 {
     public static IServiceCollection AddApiConfiguration(this IServiceCollection services)
     {
-        services.AddControllers();
+        services.AddCors();
+        
+        services.AddControllers()
+            .AddJsonOptions(x =>
+            {
+                x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            });
         
         return services;
     }
